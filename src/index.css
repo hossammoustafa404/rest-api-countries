@@ -1,13 +1,34 @@
-body {
+/* Variables start */
+:root {
+  --darkModeElements: hsl(209, 23%, 22%);
+  --darkModeBackground: hsl(207, 26%, 17%);
+  --lightModeText: hsl(200, 15%, 8%);
+  --lightModeInput: hsl(0, 0%, 52%);
+  --lightModeBackground: hsl(0, 0%, 98%);
+  --darkModeTextAndLightModeElements: hsl(0, 0%, 100%);
+}
+/* Variables end */
+
+/* Global rules start */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+button:focus {
+  outline: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  border: none;
 }
+input:focus {
+  outline: none;
+}
+/* Global rules end */
